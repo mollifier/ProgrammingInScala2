@@ -10,11 +10,20 @@ object Chapter3 {
     greetStrings(1) = ", "
     greetStrings(2) = "World!"
     */
-    
-    val greetStrings = Array("zero, ", "one, ", "two")
-    for (i <- 0 to 2) {
-      print(greetStrings(i))
-    }
+
+   /*
+   val oneTwo = List(1, 2)
+   val threeFour = List(3, 4)
+   val oneTwoThreeFour = oneTwo ::: threeFour
+
+   println(oneTwo + " and " + threeFour + " were not mutated.")
+   println("Thus, " + oneTwoThreeFour + " is a new list")
+   */
+
+  val twoThree = List(2, 3)
+  val oneTwoThree = 1 :: twoThree
+  println(oneTwoThree)
+
   }
 }
 
