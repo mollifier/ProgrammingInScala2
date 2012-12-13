@@ -20,9 +20,10 @@ object Chapter3 {
    println("Thus, " + oneTwoThreeFour + " is a new list")
    */
 
-  val twoThree = List(2, 3)
-  val oneTwoThree = 1 :: twoThree
-  println(oneTwoThree)
+  
+  val pair = (99, "hoge")
+  println(pair._1)
+  println(pair._2)
 
   }
 }
