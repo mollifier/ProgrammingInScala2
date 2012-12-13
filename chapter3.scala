@@ -21,9 +21,14 @@ object Chapter3 {
    */
 
   
-  val pair = (99, "hoge")
-  println(pair._1)
-  println(pair._2)
+//  val pair = (99, "hoge")
+//  println(pair._1)
+//  println(pair._2)
+  
+  var jetSet = Set("Boeing", "Airbus")
+  jetSet += "Lear"
+  jetSet += "Cessna"
+  println(jetSet.contains("Cessna"))
 
   }
 }
