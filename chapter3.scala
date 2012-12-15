@@ -68,10 +68,18 @@ object Chapter3 {
       //args.foreach(println)
       args.foreach(x => println(x))
     }
+    
+    //def formatArgs(args: Array[String]) = args.mkString("\n")
+    def formatArgs(args: Array[String]) = {
+      args.mkString("\n")
+    }
 
     printArgs(Array("1", "22", "333"))
     printArgs2(Array("x1", "x22", "x333"))
     printArgs3(Array("y1", "y22", "y333"))
+    
+    val a = Array("z1", "z22", "z333")
+    println(formatArgs(a))
 
 
   }
