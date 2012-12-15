@@ -12,7 +12,10 @@ object Chapter3_6 {
 
       val lines = Source.fromFile(args(0)).getLines().toList
       
-      def widthOfLength(s: String) = s.length.toString.length
+      //def widthOfLength(s: String) = s.length.toString.length
+      def widthOfLength(s: String):Int = {
+        s.length.toString.length
+      }
       
       var maxWidth = 0
       for (line <- lines) {
