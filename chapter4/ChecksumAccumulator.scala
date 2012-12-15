@@ -5,7 +5,7 @@ import scala.collection.mutable.Map
 object ChecksumAccumulator {
   private val cache = Map[String, Int]()
 
-  def calculate(s: String): Int = 
+  def calculate(s: String): Int =
     if (cache.contains(s)) {
       cache(s)
     } else {
@@ -23,13 +23,12 @@ object ChecksumAccumulator {
 
 class ChecksumAccumulator {
   private var sum = 0
-  def add(b: Byte): Unit = {
+  
+  def add(b: Byte) {
     sum += b
   }
-  
-  def checksum(): Int = {
-    return ~(sum & 0xFF) + 1
-  }
-  
+
+  def checksum(): Int = ~(sum & 0xFF) + 1
+
 }
 
